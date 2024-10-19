@@ -1,0 +1,315 @@
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #cde5f8;
+    background-image: url(img2/abstract.png);
+    background-size: cover;
+    transition: 0.7s;
+}
+
+.banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner h1{
+    color: azure;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner h2{
+    color: azure;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.banner span img{
+    color: azure;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+.banner .product{
+    /* background-color: red; */
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    display: flex;
+    --left: 0px
+}
+
+.banner .product .soda{
+    background:
+       var(--url) var(--left) 0,
+       url(img2/can_mockup.png);
+    background-size: auto 100%;
+    width: 170px;
+    /* height: 400px; */
+    aspect-ratio: 2 / 4.1;
+    background-blend-mode: multiply;
+    mask-image: url(img2/can_mockup.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product .flavour{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .product:hover{
+    --left: -260px; 
+    transform: translateX(-50%) translateY(-80px) rotate(-10deg);
+}
+
+.banner .product:hover .flavour{
+    opacity: 1;
+}
+
+.banner .product-2{
+    /* background-color: red; */
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    display: flex;
+    --left: 0px
+}
+
+.banner .product-2 .soda-2{
+    background:
+       var(--url) var(--left) 0,
+       url(img2/can_mockup.png);
+    background-size: auto 100%;
+    width: 170px;
+    /* height: 400px; */
+    aspect-ratio: 2 / 4.1;
+    background-blend-mode: multiply;
+    mask-image: url(img2/can_mockup.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product-2 .flavour-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .product-2:hover{
+    --left: -260px; 
+    transform: translateX(-50%) translateY(-80px) rotate(-10deg);
+}
+
+.banner .product-2:hover .flavour-2{
+    opacity: 1;
+}
+
+.banner .product-3{
+    /* background-color: red; */
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 65%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    display: flex;
+    --left: 0px
+}
+
+.banner .product-3 .soda-3{
+    background:
+       var(--url) var(--left) 0,
+       url(img2/can_mockup.png);
+    background-size: auto 100%;
+    width: 170px;
+    /* height: 400px; */
+    aspect-ratio: 2 / 4.1;
+    background-blend-mode: multiply;
+    mask-image: url(img2/can_mockup.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product-3 .flavour-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .product-3:hover{
+    --left: -260px; 
+    transform: translateX(-50%) translateY(-80px) rotate(-10deg);
+}
+
+.banner .product-3:hover .flavour-3{
+    opacity: 1;
+}
+
+.banner .product-4{
+    /* background-color: red; */
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    display: flex;
+    --left: 0px
+}
+
+.banner .product-4 .soda-4{
+    background:
+       var(--url) var(--left) 0,
+       url(img2/can_mockup.png);
+    background-size: auto 100%;
+    width: 170px;
+    /* height: 400px; */
+    aspect-ratio: 2 / 4.1;
+    background-blend-mode: multiply;
+    mask-image: url(img2/can_mockup.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product-4 .flavour-4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .product-4:hover{
+    --left: -260px; 
+    transform: translateX(-50%) translateY(-80px) rotate(-10deg);
+}
+
+.banner .product-4:hover .flavour-4{
+    opacity: 1;
+}
+
+.banner .product-5{
+    /* background-color: red; */
+    width: 190px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    display: flex;
+    --left: 0px
+}
+
+.banner .product-5 .soda-5{
+    background:
+       var(--url) var(--left) 0,
+       url(img2/can_mockup.png);
+    background-size: auto 100%;
+    width: 170px;
+    /* height: 400px; */
+    aspect-ratio: 2 / 4.1;
+    background-blend-mode: multiply;
+    mask-image: url(img2/can_mockup.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product-5 .flavour-5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .product-5:hover{
+    --left: -260px; 
+    transform: translateX(-50%) translateY(-80px) rotate(-10deg);
+}
+
+.banner .product-5:hover .flavour-5{
+    opacity: 1;
+}
