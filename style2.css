@@ -1,0 +1,104 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cde5f8;
+    background-image: url(img2/abstract.png);
+    background-size: cover;
+    transition: 0.7s;
+    margin: 0;
+}
+
+.banner {
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+position: relative;
+}
+
+.banner h1 {
+color: azure;
+font-size: 40px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 20px;
+}
+
+.banner h2 {
+color: azure;
+font-size: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-top: 10px;
+}
+
+.banner span img {
+width: 100px;
+margin: 20px 0;
+}
+
+.product-container {
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+justify-content: center;
+padding: 20px;
+max-width: 1000px;
+}
+
+.product {
+    width: 190px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: 0.7s;
+    --left: 0px; 
+    margin-bottom: 50px;
+}
+
+.soda {
+background:
+    var(--url) var(--left) 0,
+    url(img2/can_mockup.png);
+background-size: auto 100%;
+width: 170px;
+aspect-ratio: 2 / 4.1;
+background-blend-mode: multiply;
+mask-image: url(img2/can_mockup.png);
+mask-size: auto 100%;
+transition: 0.7s;
+position: relative;
+}
+
+.flavour {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+opacity: 0;
+/* transition: opacity 0.3s ease; */
+transition: 0.7s;
+pointer-events: none; 
+}
+
+.product:hover {
+--left: -260px; 
+}
+
+.product:hover .soda {
+    transform: translateX(-10%) translateY(-80px) rotate(-10deg);
+}
+
+.product:hover .flavour {
+    transform: translateX(-10%) translateY(-80px) rotate(-10deg);
+    opacity: 1;
+}
